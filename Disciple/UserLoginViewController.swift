@@ -32,7 +32,7 @@ class UserLoginViewController: UIViewController, LoginButtonDelegate{
         loginButton.center = view.center
         view.addSubview(loginButton)
         
-        print(AccessToken.current!)
+     //   print(AccessToken.current!)
         
  
            }

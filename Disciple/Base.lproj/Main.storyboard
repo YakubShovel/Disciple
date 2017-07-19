@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nXd-L5-nfC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="stX-Bo-wYr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -148,27 +148,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aVd-cH-mpv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="510" y="576"/>
-        </scene>
-        <!--Login View Controller-->
-        <scene sceneID="TMh-7P-s3R">
-            <objects>
-                <viewController id="nXd-L5-nfC" customClass="LoginViewController" customModule="Disciple" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nWi-2A-Slf"/>
-                        <viewControllerLayoutGuide type="bottom" id="2AK-kJ-DHq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5se-y6-PgC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <segue destination="stX-Bo-wYr" kind="show" id="lwW-nU-4Fh"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7it-IM-r2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1468" y="-1"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yRo-vz-jrk">
