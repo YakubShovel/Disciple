@@ -18,6 +18,8 @@
 		30053BE61F1E625700E37900 /* InboxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30053BE51F1E625700E37900 /* InboxTableViewController.swift */; };
 		30053BE81F1E62C100E37900 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30053BE71F1E62C100E37900 /* User.swift */; };
 		30053BEA1F1E63EF00E37900 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30053BE91F1E63EF00E37900 /* Lesson.swift */; };
+		845FCF791F1F7C25007884AA /* LessonDescriptionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845FCF781F1F7C25007884AA /* LessonDescriptionStoryboard.storyboard */; };
+		845FCF7B1F1F7C77007884AA /* LessonDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FCF7A1F1F7C77007884AA /* LessonDescriptionViewController.swift */; };
 		30053BEC1F1F896500E37900 /* ListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30053BEB1F1F896500E37900 /* ListingTableViewCell.swift */; };
 		842CBD791F1E72DC00D4BF45 /* UserLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842CBD781F1E72DC00D4BF45 /* UserLogin.storyboard */; };
 		842CBD7B1F1E730600D4BF45 /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CBD7A1F1E730600D4BF45 /* UserLoginViewController.swift */; };
@@ -37,6 +39,8 @@
 		30053BE51F1E625700E37900 /* InboxTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxTableViewController.swift; sourceTree = "<group>"; };
 		30053BE71F1E62C100E37900 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		30053BE91F1E63EF00E37900 /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		845FCF781F1F7C25007884AA /* LessonDescriptionStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LessonDescriptionStoryboard.storyboard; sourceTree = "<group>"; };
+		845FCF7A1F1F7C77007884AA /* LessonDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonDescriptionViewController.swift; sourceTree = "<group>"; };
 		30053BEB1F1F896500E37900 /* ListingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingTableViewCell.swift; sourceTree = "<group>"; };
 		69916A5B686E95C050743955 /* Pods-Disciple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disciple.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Disciple/Pods-Disciple.debug.xcconfig"; sourceTree = "<group>"; };
 		842CBD781F1E72DC00D4BF45 /* UserLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserLogin.storyboard; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 		30053BCE1F1E60A800E37900 /* Disciple */ = {
 			isa = PBXGroup;
 			children = (
+				845FCF771F1F7BA3007884AA /* LessonDescription */,
 				8436DB181F1EBA7B00E11B36 /* GoogleService-Info.plist */,
 				842CBD771F1E72AD00D4BF45 /* Authentication */,
 				30053BCF1F1E60A800E37900 /* AppDelegate.swift */,
@@ -106,6 +111,15 @@
 			path = Disciple;
 			sourceTree = "<group>";
 		};
+		845FCF771F1F7BA3007884AA /* LessonDescription */ = {
+			isa = PBXGroup;
+			children = (
+				845FCF781F1F7C25007884AA /* LessonDescriptionStoryboard.storyboard */,
+				845FCF7A1F1F7C77007884AA /* LessonDescriptionViewController.swift */,
+			);
+			name = LessonDescription;
+			sourceTree = "<group>";
+		};
 		842CBD771F1E72AD00D4BF45 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,8 +135,7 @@
 				BB85FD2AEEA18C1F35DF35A8 /* Pods_Disciple.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
+    };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,6 +200,7 @@
 			files = (
 				30053BDA1F1E60A800E37900 /* LaunchScreen.storyboard in Resources */,
 				30053BD71F1E60A800E37900 /* Assets.xcassets in Resources */,
+				845FCF791F1F7C25007884AA /* LessonDescriptionStoryboard.storyboard in Resources */,
 				30053BD51F1E60A800E37900 /* Main.storyboard in Resources */,
 				842CBD791F1E72DC00D4BF45 /* UserLogin.storyboard in Resources */,
 				8436DB191F1EBA7B00E11B36 /* GoogleService-Info.plist in Resources */,
@@ -256,6 +270,7 @@
 				30053BD01F1E60A800E37900 /* AppDelegate.swift in Sources */,
 				30053BEA1F1E63EF00E37900 /* Lesson.swift in Sources */,
 				30053BE21F1E621600E37900 /* ListingsTableViewController.swift in Sources */,
+				845FCF7B1F1F7C77007884AA /* LessonDescriptionViewController.swift in Sources */,
 				842CBD7B1F1E730600D4BF45 /* UserLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
