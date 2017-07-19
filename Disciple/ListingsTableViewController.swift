@@ -10,6 +10,10 @@ import UIKit
 
 class ListingsTableViewController: UITableViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
+
+    var lessons: [Lesson] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,23 +33,24 @@ class ListingsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return lessons.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "lessonCell", for: indexPath)
+        //cell.lessonTitle?.text = lessons[indexPath.row]
 
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
