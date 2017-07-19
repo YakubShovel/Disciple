@@ -17,6 +17,14 @@ class UserLoginViewController: UIViewController, LoginButtonDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
+            if let accessToken = AccessToken.current {
+                self.performSegue(withIdentifier: "navToMain", sender: nil)
+
+            }
+        
+        
+        
         print("I am here bitch")
         
         let loginButton = LoginButton(readPermissions: [ .publicProfile ])
@@ -24,10 +32,9 @@ class UserLoginViewController: UIViewController, LoginButtonDelegate{
         loginButton.center = view.center
         view.addSubview(loginButton)
         
-        if let accessToken = AccessToken.current {
-            print(accessToken)
-        }
-
+        print(AccessToken.current!)
+        
+ 
            }
     
     func loginButtonWillLogin(loginButton: LoginButton) -> Bool {
