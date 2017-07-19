@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>54380552620-hn0hckdq18u8158e8fcec80je5rsp5bf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.54380552620-hn0hckdq18u8158e8fcec80je5rsp5bf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDL3RMA_aS0BTzMb4nXOJkfMV56IT8OSmY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>54380552620</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Jacob-Shavel.Disciple</string>
+	<key>PROJECT_ID</key>
+	<string>disciple-cb960</string>
+	<key>STORAGE_BUCKET</key>
+	<string>disciple-cb960.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:54380552620:ios:c589f3c92ad2c5b6</string>
+	<key>DATABASE_URL</key>
+	<string>https://disciple-cb960.firebaseio.com</string>
+</dict>
+</plist>
