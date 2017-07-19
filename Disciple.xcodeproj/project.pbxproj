@@ -18,6 +18,7 @@
 		30053BE61F1E625700E37900 /* InboxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30053BE51F1E625700E37900 /* InboxTableViewController.swift */; };
 		30053BE81F1E62C100E37900 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30053BE71F1E62C100E37900 /* User.swift */; };
 		30053BEA1F1E63EF00E37900 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30053BE91F1E63EF00E37900 /* Lesson.swift */; };
+		30053BEC1F1F896500E37900 /* ListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30053BEB1F1F896500E37900 /* ListingTableViewCell.swift */; };
 		842CBD791F1E72DC00D4BF45 /* UserLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842CBD781F1E72DC00D4BF45 /* UserLogin.storyboard */; };
 		842CBD7B1F1E730600D4BF45 /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CBD7A1F1E730600D4BF45 /* UserLoginViewController.swift */; };
 		8436DB191F1EBA7B00E11B36 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8436DB181F1EBA7B00E11B36 /* GoogleService-Info.plist */; };
@@ -36,6 +37,7 @@
 		30053BE51F1E625700E37900 /* InboxTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxTableViewController.swift; sourceTree = "<group>"; };
 		30053BE71F1E62C100E37900 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		30053BE91F1E63EF00E37900 /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		30053BEB1F1F896500E37900 /* ListingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingTableViewCell.swift; sourceTree = "<group>"; };
 		69916A5B686E95C050743955 /* Pods-Disciple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disciple.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Disciple/Pods-Disciple.debug.xcconfig"; sourceTree = "<group>"; };
 		842CBD781F1E72DC00D4BF45 /* UserLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserLogin.storyboard; sourceTree = "<group>"; };
 		842CBD7A1F1E730600D4BF45 /* UserLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				30053BD11F1E60A800E37900 /* LoginViewController.swift */,
 				30053BE51F1E625700E37900 /* InboxTableViewController.swift */,
 				30053BE31F1E623300E37900 /* CalenderViewController.swift */,
+				30053BEB1F1F896500E37900 /* ListingTableViewCell.swift */,
 				30053BE11F1E621600E37900 /* ListingsTableViewController.swift */,
 				30053BD61F1E60A800E37900 /* Assets.xcassets */,
 				30053BD81F1E60A800E37900 /* LaunchScreen.storyboard */,
@@ -247,6 +250,7 @@
 			files = (
 				30053BE41F1E623300E37900 /* CalenderViewController.swift in Sources */,
 				30053BE61F1E625700E37900 /* InboxTableViewController.swift in Sources */,
+				30053BEC1F1F896500E37900 /* ListingTableViewCell.swift in Sources */,
 				30053BE81F1E62C100E37900 /* User.swift in Sources */,
 				30053BD21F1E60A800E37900 /* LoginViewController.swift in Sources */,
 				30053BD01F1E60A800E37900 /* AppDelegate.swift in Sources */,

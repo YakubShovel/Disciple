@@ -8,16 +8,48 @@
 
 import UIKit
 
-class ListingsTableViewController: UITableViewController {
+class ListingsTableViewController: UITableViewController, UISearchBarDelegate {
 
+
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    var lessons: [Lesson] = []
+    
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let  searchWords = searchBar.text
+        
+    }
+   
+    
+    
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        searchBar.delegate = self
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        lessons.append(Lesson(lessonTitle: "Test", lessonID: "1", lessonTeacher: "Jacob", price: 100, info: "Test", duration: 1, firebaseUID: "1", keywords: ["ios", "mobile", "programming"]))
+        
+        let filtered = lessons.filter(
+            { (e) -> Bool in
+        
+                if e.keywords.contains("ios") {
+                    return true
+                } else {
+                    return false
+                }
+                
+        })
+        
+        print(filtered)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,23 +61,23 @@ class ListingsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return lessons.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "lessonCell", for: indexPath) as! ListingTableViewCell
+        cell.lessonTitle?.text = lessons[indexPath.row].lessonTitle
+        cell.lessonTeacher?.text = lessons[indexPath.row].lessonTeacher
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
