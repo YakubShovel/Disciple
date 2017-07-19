@@ -8,20 +8,48 @@
 
 import UIKit
 
-class ListingsTableViewController: UITableViewController {
+class ListingsTableViewController: UITableViewController, UISearchBarDelegate {
+
 
     @IBOutlet weak var searchBar: UISearchBar!
-
+    
     var lessons: [Lesson] = []
     
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let  searchWords = searchBar.text
+        
+    }
+   
+    
+    
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        searchBar.delegate = self
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        lessons.append(Lesson(lessonTitle: "Test", lessonID: "1", lessonTeacher: "Jacob", price: 100, info: "Test", duration: 1, firebaseUID: "1", keywords: ["ios", "mobile", "programming"]))
+        
+        let filtered = lessons.filter(
+            { (e) -> Bool in
+        
+                if e.keywords.contains("ios") {
+                    return true
+                } else {
+                    return false
+                }
+                
+        })
+        
+        print(filtered)
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,10 +71,9 @@ class ListingsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "lessonCell", for: indexPath)
-        //cell.lessonTitle?.text = lessons[indexPath.row]
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "lessonCell", for: indexPath) as! ListingTableViewCell
+        cell.lessonTitle?.text = lessons[indexPath.row].lessonTitle
+        cell.lessonTeacher?.text = lessons[indexPath.row].lessonTeacher
 
         return cell
     }

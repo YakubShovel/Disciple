@@ -17,6 +17,7 @@
 		30053BE61F1E625700E37900 /* InboxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30053BE51F1E625700E37900 /* InboxTableViewController.swift */; };
 		30053BE81F1E62C100E37900 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30053BE71F1E62C100E37900 /* User.swift */; };
 		30053BEA1F1E63EF00E37900 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30053BE91F1E63EF00E37900 /* Lesson.swift */; };
+		30053BEC1F1F896500E37900 /* ListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30053BEB1F1F896500E37900 /* ListingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		30053BE51F1E625700E37900 /* InboxTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxTableViewController.swift; sourceTree = "<group>"; };
 		30053BE71F1E62C100E37900 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		30053BE91F1E63EF00E37900 /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		30053BEB1F1F896500E37900 /* ListingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				30053BD11F1E60A800E37900 /* LoginViewController.swift */,
 				30053BE51F1E625700E37900 /* InboxTableViewController.swift */,
 				30053BE31F1E623300E37900 /* CalenderViewController.swift */,
+				30053BEB1F1F896500E37900 /* ListingTableViewCell.swift */,
 				30053BE11F1E621600E37900 /* ListingsTableViewController.swift */,
 				30053BD61F1E60A800E37900 /* Assets.xcassets */,
 				30053BD81F1E60A800E37900 /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 			files = (
 				30053BE41F1E623300E37900 /* CalenderViewController.swift in Sources */,
 				30053BE61F1E625700E37900 /* InboxTableViewController.swift in Sources */,
+				30053BEC1F1F896500E37900 /* ListingTableViewCell.swift in Sources */,
 				30053BE81F1E62C100E37900 /* User.swift in Sources */,
 				30053BD21F1E60A800E37900 /* LoginViewController.swift in Sources */,
 				30053BD01F1E60A800E37900 /* AppDelegate.swift in Sources */,
@@ -319,6 +323,7 @@
 				30053BE01F1E60A800E37900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

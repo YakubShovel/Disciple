@@ -18,17 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="prominent" placeholder="What do you want to learn?" translucent="NO" id="3lO-HU-bdq">
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="nYc-Aq-Xdh">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <textInputTraits key="textInputTraits"/>
-                            <connections>
-                                <outlet property="delegate" destination="rNz-6r-XLO" id="9Xq-uq-uRV"/>
-                            </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="lessonCell" rowHeight="69" id="Dzy-ph-a99">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="lessonCell" rowHeight="69" id="Dzy-ph-a99" customClass="ListingTableViewCell" customModule="Disciple" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="69"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dzy-ph-a99" id="APb-6Y-Xbt">
@@ -37,18 +33,23 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cfO-WV-c0M" userLabel="lessonImage">
                                             <rect key="frame" x="8" y="-4" width="63" height="72.5"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="lessonImage">
+                                                <bool key="isElement" value="NO"/>
+                                            </accessibility>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="63" id="4UL-18-W6A"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lesson Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLw-hT-UYt" userLabel="lessonTitle">
                                             <rect key="frame" x="79" y="8" width="296" height="30.5"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="lessonTitle"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taught by: YakubShovel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIb-bD-DxS" userLabel="lessonTeacher">
                                             <rect key="frame" x="79" y="46.5" width="288" height="21"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="lessonTeacher"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="Nrd-nJ-DtV"/>
                                             </constraints>
@@ -70,6 +71,11 @@
                                         <constraint firstItem="aLw-hT-UYt" firstAttribute="leading" secondItem="cfO-WV-c0M" secondAttribute="trailing" constant="8" symbolic="YES" id="kp7-aP-4UK"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lessonImage" destination="cfO-WV-c0M" id="drd-GN-lig"/>
+                                    <outlet property="lessonTeacher" destination="RIb-bD-DxS" id="MnS-2e-nxi"/>
+                                    <outlet property="lessonTitle" destination="aLw-hT-UYt" id="5U6-A9-CDZ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -79,7 +85,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="cxP-Ji-ZCS"/>
                     <connections>
-                        <outlet property="searchBar" destination="3lO-HU-bdq" id="iD5-hb-F7c"/>
+                        <outlet property="searchBar" destination="nYc-Aq-Xdh" id="Dvh-cZ-Pyk"/>
                         <outlet property="searchDisplayController" destination="Leh-7u-YXd" id="RHN-gm-I3X"/>
                     </connections>
                 </tableViewController>
@@ -87,7 +93,6 @@
                 <searchDisplayController id="Leh-7u-YXd">
                     <connections>
                         <outlet property="delegate" destination="rNz-6r-XLO" id="e2p-xh-a8q"/>
-                        <outlet property="searchBar" destination="3lO-HU-bdq" id="acd-Ig-T53"/>
                         <outlet property="searchContentsController" destination="rNz-6r-XLO" id="Fo0-Qb-U07"/>
                         <outlet property="searchResultsDataSource" destination="rNz-6r-XLO" id="IWl-62-mLM"/>
                         <outlet property="searchResultsDelegate" destination="rNz-6r-XLO" id="oKK-p3-V4B"/>
@@ -190,7 +195,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KR7-Pm-BK6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Listings" id="P10-u0-ige"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="EcB-c6-0V3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="EcB-c6-0V3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
